@@ -88,13 +88,13 @@ Follow the steps given below to configure WSO2 IS 6.x as a Key Manager component
 !!! note
     If application owner users are not created on the WSO2 IS side, add the following configurations to the `<IS_HOME>/repository/conf/deployment.toml` file to ensure OAuth applications are owned by the admin user and application scopes are enabled.
 
-```toml
-    [oauth]
-    enable_admin_user_own_oauth_applications = true
+    ```toml
+      [oauth]
+      enable_admin_user_own_oauth_applications = true
 
-    [oauth.scope_validator]
-    enable_application_scopes = true
-```
+      [oauth.scope_validator]
+      enable_application_scopes = true
+    ```
 
 3. Download the [WSO2 IS Connector]({{base_path}}/assets/attachments/administer/wso2is-extensions-1.8.8.zip).
 
